@@ -2,7 +2,7 @@
 <header>
     <div class="header-top">
         <div class="logo-wrapper">
-        <img src="{{asset('images/molisana-logo.png')}}" alt="">
+        <img src="{{asset('images/marchio-sito-test.png')}}" alt="">
         </div>
     </div>
     <div class="header-bottom">

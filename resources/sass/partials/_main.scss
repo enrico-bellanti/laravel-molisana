@@ -1,0 +1,17 @@
+// MAIN
+.main-wrapper{
+    background-image: url("../images/fondo-pag-speciali.jpg");
+    background-size: contain;
+    padding: 0 50px;
+    & .products{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        & .product{
+            width: calc(100% / 3);
+            & img{
+                max-width: 100%;
+            }
+        }
+    }
+}

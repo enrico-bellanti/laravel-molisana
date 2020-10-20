@@ -148,29 +148,29 @@
 @section('mainContent') 
   {{-- MAIN --}}
   <main>
-      <div class="section-wrapper">
+      <div class="main-wrapper">
           <h2>Lunga</h2>
-          <ul class="pasta-list">
+          <ul class="products">
               @foreach ($lunga as $product)
-                  <li>
+                  <li class="product">
                       <img src="{{$product["src"]}}" alt="">
                   <h3>{{$product["titolo"]}}</h3>
                   </li>
               @endforeach
           </ul>
           <h2>Corta</h2>
-          <ul class="pasta-list">
+          <ul class="products">
               @foreach ($corta as $product)
-                  <li>
+                  <li class="product">
                       <img src="{{$product["src"]}}" alt="">
                   <h3>{{$product["titolo"]}}</h3>
                   </li>
               @endforeach
           </ul>
           <h2>Cortissima</h2>
-          <ul class="pasta-list">
+          <ul class="products">
               @foreach ($cortissima as $product)
-                  <li>
+                  <li class="product">
                       <img src="{{$product["src"]}}" alt="">
                   <h3>{{$product["titolo"]}}</h3>
                   </li>

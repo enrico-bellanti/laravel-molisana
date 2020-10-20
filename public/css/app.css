@@ -6,6 +6,12 @@
   display: flex;
   justify-content: center;
 }
+.header-top .logo-wrapper {
+  padding: 40px 0;
+}
+.header-top .logo-wrapper img {
+  width: 150px;
+}
 
 .header-bottom .header-nav {
   display: flex;
@@ -14,7 +20,14 @@
 .header-bottom .header-nav-list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 .header-bottom .header-nav-list a {
+  padding: 15px 10px;
   text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.header-bottom .header-nav-list a.active {
+  background-color: #b3e5fc;
 }

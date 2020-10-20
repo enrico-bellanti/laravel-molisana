@@ -141,71 +141,42 @@
   }
 
 @endphp
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    </head>
-    <body>
-        {{-- HEADER --}}
-        <header>
-            <div class="header-top">
-                <div class="logo-wrapper">
-                <img src="{{asset('img/molisana-logo.png')}}" alt="">
-                </div>
-            </div>
-            <div class="header-bottom">
-                <nav class="main-nav">
-                    <ul class="menu-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Prodotti</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        {{-- /HEADER --}}
 
-        {{-- MAIN --}}
-        <main>
-            <div class="section-wrapper">
-                <h2>Lunga</h2>
-                <ul class="pasta-list">
-                    @foreach ($lunga as $product)
-                        <li>
-                            <img src="{{$product["src"]}}" alt="">
-                        <h3>{{$product["titolo"]}}</h3>
-                        </li>
-                    @endforeach
-                </ul>
-                <h2>Corta</h2>
-                <ul class="pasta-list">
-                    @foreach ($corta as $product)
-                        <li>
-                            <img src="{{$product["src"]}}" alt="">
-                        <h3>{{$product["titolo"]}}</h3>
-                        </li>
-                    @endforeach
-                </ul>
-                <h2>Cortissima</h2>
-                <ul class="pasta-list">
-                    @foreach ($cortissima as $product)
-                        <li>
-                            <img src="{{$product["src"]}}" alt="">
-                        <h3>{{$product["titolo"]}}</h3>
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
-        </main>
-        {{-- /MAIN --}}
+{{-- HTML --}}
 
-        {{-- FOOTER --}}
-        <footer></footer>
-        {{-- FOOTER --}}
-    </body>
-</html>
+@extends('layouts.layout-main') 
+@section('mainContent') 
+  {{-- MAIN --}}
+  <main>
+      <div class="section-wrapper">
+          <h2>Lunga</h2>
+          <ul class="pasta-list">
+              @foreach ($lunga as $product)
+                  <li>
+                      <img src="{{$product["src"]}}" alt="">
+                  <h3>{{$product["titolo"]}}</h3>
+                  </li>
+              @endforeach
+          </ul>
+          <h2>Corta</h2>
+          <ul class="pasta-list">
+              @foreach ($corta as $product)
+                  <li>
+                      <img src="{{$product["src"]}}" alt="">
+                  <h3>{{$product["titolo"]}}</h3>
+                  </li>
+              @endforeach
+          </ul>
+          <h2>Cortissima</h2>
+          <ul class="pasta-list">
+              @foreach ($cortissima as $product)
+                  <li>
+                      <img src="{{$product["src"]}}" alt="">
+                  <h3>{{$product["titolo"]}}</h3>
+                  </li>
+              @endforeach
+          </ul>
+      </div>
+  </main>
+  {{-- /MAIN --}}
+@endsection

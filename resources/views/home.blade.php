@@ -149,30 +149,36 @@
   {{-- MAIN --}}
   <main>
       <div class="main-wrapper">
-          <h2>Lunga</h2>
+          <h2>LE LUNGHE</h2>
           <ul class="products">
               @foreach ($lunga as $product)
                   <li class="product">
-                      <img src="{{$product["src"]}}" alt="">
-                  <h3>{{$product["titolo"]}}</h3>
+                    <img src="{{$product["src"]}}" alt="">
+                    <div class="product-layout"></div>
+                    <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
+                    <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
                   </li>
               @endforeach
           </ul>
-          <h2>Corta</h2>
+          <h2>LE CORTE</h2>
           <ul class="products">
               @foreach ($corta as $product)
                   <li class="product">
-                      <img src="{{$product["src"]}}" alt="">
-                  <h3>{{$product["titolo"]}}</h3>
+                    <img src="{{$product["src"]}}" alt="">
+                    <div class="product-layout"></div>
+                    <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
+                    <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
                   </li>
               @endforeach
           </ul>
-          <h2>Cortissima</h2>
+          <h2>LE CORTISSIME</h2>
           <ul class="products">
               @foreach ($cortissima as $product)
                   <li class="product">
-                      <img src="{{$product["src"]}}" alt="">
-                  <h3>{{$product["titolo"]}}</h3>
+                    <img src="{{$product["src"]}}" alt="">
+                    <div class="product-layout"></div>
+                    <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
+                    <a class="icon-cutlery" href="#">c<img src="{{asset('images/icon.svg')}}" alt=""></a>
                   </li>
               @endforeach
           </ul>

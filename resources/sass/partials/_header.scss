@@ -17,13 +17,16 @@
             display: flex;
             list-style: none;
             padding: 0;
-            & a{
-                padding: 15px 10px;
-                text-decoration: none;
-                color: #000;
-                font-weight: bold;
-                &.active{
-                    background-color:$lightBlue;
+            & li{
+                & a{
+                    display: inline-block;
+                    padding: 15px 10px;
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: bold;
+                    &.active{
+                        background-color: $lightBlue;
+                    }
                 }
             }
         }

@@ -193,7 +193,7 @@
                 </ul>
                 <h2>Cortissima</h2>
                 <ul class="pasta-list">
-                    @foreach ($Cortissima as $product)
+                    @foreach ($cortissima as $product)
                         <li>
                             <img src="{{$product["src"]}}" alt="">
                         <h3>{{$product["titolo"]}}</h3>

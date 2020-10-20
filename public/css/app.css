@@ -1,4 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);body {
+  font-family: "Roboto", sans-serif;
+}
+
 .header-top {
   display: flex;
   justify-content: center;
+}
+
+.header-bottom .header-nav {
+  display: flex;
+  justify-content: center;
+}
+.header-bottom .header-nav-list {
+  display: flex;
+  list-style: none;
+}
+.header-bottom .header-nav-list a {
+  text-decoration: none;
 }

@@ -1,0 +1,52 @@
+// FOOTER
+footer{
+    background-image: url(../images/footer-montagne-bottom.jpg);
+    background-repeat:no-repeat;
+    background-position:center bottom;
+
+}
+.footer-wrapper{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    & .col-4{
+        width: calc(100% / 3);
+    }
+    & .col-left{
+        & img{
+            width: 80%;
+        }
+        & .infos-molisana{
+            width: 80%;
+            &-list{
+                list-style: none;
+                & .info-molisana{
+                    color: $lightGrey;
+                    & p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    & .footer-nav{
+        h3{
+            margin: 20px;
+            font-size: 22px;
+            font-weight: 500;
+            color: $darkGrey;
+        }
+        &-list{
+            list-style: none;
+            & li{
+                margin: 7px 0;
+            }
+            & a{
+                font-size: 14px;
+                text-decoration: none;
+                color: $lightGrey;
+            }
+        }
+    }
+}

@@ -178,7 +178,7 @@
                     <img src="{{$product["src"]}}" alt="">
                     <div class="product-layout"></div>
                     <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
-                    <a class="icon-cutlery" href="#">c<img src="{{asset('images/icon.svg')}}" alt=""></a>
+                    <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
                   </li>
               @endforeach
           </ul>

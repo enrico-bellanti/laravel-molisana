@@ -30,3 +30,8 @@ Route::get('/products', function () {
 Route::get('/news', function () {
     return view('news');
 })->name("news");
+
+Route::get('/products/show/0', function () {
+    $product = config("pasta-type.0");
+    return view('products/single-product', ["data" => $product]);
+})->name("single-product");

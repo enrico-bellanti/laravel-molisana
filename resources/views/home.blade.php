@@ -145,6 +145,7 @@
 {{-- HTML --}}
 
 @extends('layouts.layout-main') 
+
 @section('mainContent') 
   {{-- MAIN --}}
   <main>
@@ -152,34 +153,34 @@
           <h2>LE LUNGHE</h2>
           <ul class="products">
               @foreach ($lunga as $product)
-                  <li class="product">
-                    <img src="{{$product["src"]}}" alt="">
-                    <div class="product-layout"></div>
-                    <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
-                    <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
-                  </li>
+                <li class="product">
+                  <img src="{{$product["src"]}}" alt="">
+                  <div class="product-layout"></div>
+                  <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
+                  <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
+                </li>
               @endforeach
           </ul>
           <h2>LE CORTE</h2>
           <ul class="products">
               @foreach ($corta as $product)
-                  <li class="product">
-                    <img src="{{$product["src"]}}" alt="">
-                    <div class="product-layout"></div>
-                    <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
-                    <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
-                  </li>
+                <li class="product">
+                  <img src="{{$product["src"]}}" alt="">
+                  <div class="product-layout"></div>
+                  <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
+                  <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
+                </li>
               @endforeach
           </ul>
           <h2>LE CORTISSIME</h2>
           <ul class="products">
               @foreach ($cortissima as $product)
-                  <li class="product">
-                    <img src="{{$product["src"]}}" alt="">
-                    <div class="product-layout"></div>
-                    <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
-                    <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
-                  </li>
+                <li class="product">
+                  <img src="{{$product["src"]}}" alt="">
+                  <div class="product-layout"></div>
+                  <a class="product-name" href="#"><h3>{{$product["titolo"]}}</h3></a>
+                  <a class="icon-cutlery" href="#"><img src="{{asset('images/icon.svg')}}" alt=""></a>
+                </li>
               @endforeach
           </ul>
       </div>

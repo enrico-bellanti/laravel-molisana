@@ -123,4 +123,5 @@
         ]';
       
         $data = json_decode($data, true); 
+        return $data;
 ?>

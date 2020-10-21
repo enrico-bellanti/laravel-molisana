@@ -116,34 +116,53 @@ footer {
   background-image: url(../images/footer-montagne-bottom.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
+  padding-bottom: 50px;
 }
 
 .footer-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
   padding: 50px 0;
 }
-.footer-wrapper .col-4 {
-  width: calc(100% / 3);
+.footer-wrapper > .col-6-lg {
+  width: 50%;
 }
-.footer-wrapper .col-left img {
+@media only screen and (max-width: 576px) {
+  .footer-wrapper > .col-12-sx {
+    width: 100%;
+  }
+}
+.footer-wrapper .footer-infos img, .footer-wrapper .footer-infos .infos-molisana {
   width: 80%;
 }
-.footer-wrapper .col-left .infos-molisana {
-  width: 80%;
+.footer-wrapper .footer-infos img {
+  max-width: 200px;
 }
-.footer-wrapper .col-left .infos-molisana-list {
+.footer-wrapper .footer-infos .infos-molisana-list {
   list-style: none;
 }
-.footer-wrapper .col-left .infos-molisana-list .info-molisana {
+.footer-wrapper .footer-infos .infos-molisana-list .info-molisana {
   color: #8f97a4;
 }
-.footer-wrapper .col-left .infos-molisana-list .info-molisana p {
-  font-size: 14px;
+.footer-wrapper .footer-infos .infos-molisana-list .info-molisana p {
+  font-size: 12px;
+}
+.footer-wrapper .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-wrapper .footer-nav .col-6-lg {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .footer-wrapper .footer-nav .col-12-sx {
+    width: 100%;
+  }
 }
 .footer-wrapper .footer-nav h3 {
-  margin: 20px;
+  margin: 20px 0;
   font-size: 22px;
   font-weight: 500;
   color: #848d9b;
@@ -155,7 +174,7 @@ footer {
   margin: 7px 0;
 }
 .footer-wrapper .footer-nav-list a {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   color: #8f97a4;
 }

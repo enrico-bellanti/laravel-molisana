@@ -11,9 +11,9 @@
     <div class="header-bottom">
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a class="active" href="#">Prodotti</a></li>
-                <li><a href="#">News</a></li>
+            <li><a href="{{route("home")}}">Home</a></li>
+                <li><a class="active" href="{{route("products")}}">Prodotti</a></li>
+                <li><a href="{{route("news")}}">News</a></li>
             </ul>
         </nav>
     </div>

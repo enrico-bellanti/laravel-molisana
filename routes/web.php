@@ -15,4 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name("home");
+
+Route::get('/products', function () {
+    $data = config("pasta-type");
+    $products = [];
+    foreach ($data as $key => $value) {
+        $value["id"] = $key; 
+        $products[$value["tipo"]][]  = $value; 
+    }
+    return view('products', ["products" => $products]);
+})->name("products");
+
+Route::get('/news', function () {
+    return view('news');
+})->name("news");

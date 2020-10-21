@@ -3,36 +3,54 @@ footer{
     background-image: url(../images/footer-montagne-bottom.jpg);
     background-repeat:no-repeat;
     background-position:center bottom;
-
+    padding-bottom: 50px;
 }
 .footer-wrapper{
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: auto;
     padding: 50px 0;
-    & .col-4{
-        width: calc(100% / 3);
+    & > .col-6-lg{
+        width: 50%;
     }
-    & .col-left{
-        & img{
+    @media only screen and (max-width: 576px){
+        & > .col-12-sx{
+            width: 100%;
+        }
+    }
+    & .footer-infos{
+        & img, & .infos-molisana{
             width: 80%;
         }
+        & img{
+            max-width: 200px;
+        }
         & .infos-molisana{
-            width: 80%;
             &-list{
                 list-style: none;
                 & .info-molisana{
                     color: $lightGrey;
                     & p{
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                 }
             }
         }
     }
     & .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        & .col-6-lg{
+            width: 50%;
+        }
+        @media only screen and (max-width: 768px){
+            & .col-12-sx{
+                width: 100%;
+            }
+        }
         h3{
-            margin: 20px;
+            margin: 20px 0;
             font-size: 22px;
             font-weight: 500;
             color: $darkGrey;
@@ -43,7 +61,7 @@ footer{
                 margin: 7px 0;
             }
             & a{
-                font-size: 14px;
+                font-size: 12px;
                 text-decoration: none;
                 color: $lightGrey;
             }

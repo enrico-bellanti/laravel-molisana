@@ -1,9 +1,9 @@
 // MAIN
-main{
+.main-wrapper{
     background-image: url("../images/fondo-pag-speciali.jpg");
     background-size: contain;
     padding: 30px 0;
-    & .main-wrapper{
+    & .list-wrapper{
         width: 80%;
         margin: auto;
     }

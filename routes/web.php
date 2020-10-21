@@ -31,7 +31,7 @@ Route::get('/news', function () {
     return view('news');
 })->name("news");
 
-Route::get('/products/show/0', function () {
-    $product = config("pasta-type.0");
+Route::get('/products/show/{id}', function ($id) {
+    $product = config("pasta-type.$id");
     return view('products/single-product', ["data" => $product]);
-})->name("single-product");
+})->where('id', '[0-9]+')->name("single-product");

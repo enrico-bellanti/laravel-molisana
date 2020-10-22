@@ -31,7 +31,10 @@ Route::get('/news', function () {
     return view('news');
 })->name("news");
 
+
 Route::get('/products/show/{id}', function ($id) {
-    $product = config("pasta-type.$id");
-    return view('products/single-product', ["data" => $product]);
+    $products = config("pasta-type");
+    $length = count($products);
+    $product = $products[$id];
+    return view('products/single-product', ["data" => $product, "id" => $id, "length" => $length]);
 })->where('id', '[0-9]+')->name("single-product");

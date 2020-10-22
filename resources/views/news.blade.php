@@ -1,5 +1,9 @@
 @extends('layouts.layout-main') 
 
 @section('mainContent')
-    <h1>Le News</h1>
+    {{-- MAIN --}}
+    <main>
+        <h1>Le News</h1>
+    </main>
+    {{-- /MAIN --}}
 @endsection

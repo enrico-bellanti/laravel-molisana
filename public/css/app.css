@@ -4806,11 +4806,13 @@ footer {
   display: block;
   width: 100%;
 }
-.product-info-container p {
-  margin: auto;
+.product-info-container .product-description {
   padding-bottom: 30px;
-  text-align: justify;
   color: #002d73;
+  text-align: justify;
+}
+.product-info-container .product-description ol {
+  padding-left: 20px;
 }
 
 .arrows i {

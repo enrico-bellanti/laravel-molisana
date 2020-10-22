@@ -16,11 +16,13 @@
         display: block;
         width: 100%;
     }
-    & p{
-        margin: auto;
+    .product-description{
         padding-bottom: 30px;
-        text-align: justify;
         color: $darkBlue;
+        text-align: justify;
+        & ol{
+            padding-left: 20px;
+        }
     }
 }
 

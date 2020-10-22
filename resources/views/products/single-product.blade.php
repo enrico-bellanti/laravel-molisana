@@ -8,7 +8,9 @@
                 <h1>{{$data["titolo"]}}</h1>
                 <img src="{{$data["src-h"]}}" alt="">
                 <img src="{{$data["src-p"]}}" alt="">
-                <p>{!!$data["descrizione"]!!}</p>
+                <div class="product-description">
+                    <p>{!!$data["descrizione"]!!}</p>
+                </div>
             </div>
             {{-- ARROWS --}}
             @if ($id > 0)
